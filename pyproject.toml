@@ -5,3 +5,11 @@ lint.ignore = ["D203"]
 [tool.black]
 line-length = 120
 target-version = ['py311']
+
+[tool.pytest.ini_options]
+addopts = "-ra --cov"
+testpaths = ["tests"]
+pythonpath = ['.']
+
+[tool.coverage.report]
+show_missing = true
